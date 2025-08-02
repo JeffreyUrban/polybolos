@@ -41,22 +41,23 @@ A polybolos (pronounced _poly-BOH-los_) is an ancient Greek multi-launcher. In a
 
 4. (Optional) Save this generic launcher as `Polybolos.app` if you’d like a source template. Otherwise, proceed.
 
-## Customize the generic Polybolos launcher for your service
+### 2. Customize the generic Polybolos launcher for your service
 
-1. Save (in Automator) or duplicate (in Finder) the launcher application, setting its name to the desired service (for example: `LibreChat.app`, `OpenWebUI.app`, or `Perplexity.app`).
+#### Save the launcher application
+- Save (in Automator) or duplicate (in Finder) the launcher application, setting its name to the desired service (for example: `LibreChat.app`, `OpenWebUI.app`, or `Perplexity.app`).
 
-2. (Optional) Select and set an icon for the launcher.  
-   _ICNS or SVG format is suggested. The free app [Image2icon](https://apps.apple.com/us/app/image2icon-make-your-icons/id992115977?mt=12) can convert an image to an ICNS icon file matching the format of macOS apps._
+#### (Optional) Select and set an icon for the launcher
+- _ICNS or SVG format is suggested._ 
+  - The free app [Image2icon](https://apps.apple.com/us/app/image2icon-make-your-icons/id992115977?mt=12) can convert an image to an ICNS icon file matching the format of macOS apps.
+- In Finder, right-click the new app and select **Get Info** (or use Cmd-I). Drag your icon file to the icon shown at the top of the Info window for your app.
 
-3. In Finder, right-click the new app and select **Get Info** (or use Cmd-I). Drag your SVG file to the icon shown at the top of the Info window for your app.
-
-4. Create a folder in the same directory as your app, with the same name as your app but excluding the `.app` extension.
-
-### Customize the configuration for your launcher
+#### Customize the configuration for your launcher
 
 See sample configurations in the `examples` directory of this repository.
 
 **To create a configuration:**
+
+- Create a folder in the same directory as your app, with the same name as your app but excluding the `.app` extension.
 
 - Ensure the configuration directory’s name matches your launcher’s name, **without the `.app` extension**.
 
@@ -66,30 +67,6 @@ See sample configurations in the `examples` directory of this repository.
     or  
     `TARGET_BASE="http://some-site.com"`
   - Create `launcher.sh`, a script that sets up the service (handling both running and not running states) and waits until the service is reachable before returning.
-
-### 2. Customize the Launcher for Your Service
-
-1. Save (in Automator) or duplicate (in Finder) your launcher application, setting its name to your desired service (for example: `LibreChat.app`, `OpenWebUI.app`, or `Perplexity.app`).
-
-2. (Optional) Select an icon for the launcher.  
-   _SVG format is suggested._
-
-3. In Finder, right-click the new app and select **Get Info** (Cmd-I). Drag your SVG file to the icon at the top of the Info window for your app.
-
-4. **Create a folder in the same directory as your app**, with the same name as your app but excluding the `.app` extension.
-
-#### Configuration Setup
-
-See sample configurations in the `examples` directory of this repository.
-
-- The configuration directory _must_ match your application's name, minus `.app`.
-
-- In the configuration directory:
-  - Create `launcher.env` and set the `TARGET_BASE` variable to your web UI, e.g.  
-    `TARGET_BASE="http://localhost:8080"`  
-    or  
-    `TARGET_BASE="http://some-site.com"`
-  - Create `launcher.sh`, a script that prepares the service (starting it if needed), and waits until it is reachable before returning.
 
 ### 3. Grant Permissions for your app to manage the service and Google Chrome
 
