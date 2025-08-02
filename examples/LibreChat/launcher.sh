@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Contributed by Jeffrey Urban, https://github.com/JeffreyUrban
+
 # Note: You'll need to set the path to your LibreChat directory. You may need to customize the path to docker.
 
 # Start LibreChat and wait for the service to become available

@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Contributed by Jeffrey Urban, https://github.com/JeffreyUrban
+
 CONTAINER_NAME="open-webui"
 
 # Note: You may need to customize the path to docker.

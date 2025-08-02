@@ -3,7 +3,7 @@
 *Customizable web UI launcher application for Mac OSX.*  
 _Wraps a run script and URL to make accessing web UIs feel like launching applications._
 
-Polybolos lets you create Mac OSX launcher applications that can start local services (such as web UIs), wait for the local or a remote service to become ready, then open the web UI in Google Chrome, focusing on an existing tab if available, or opening a new tab if not. This approach prevents the hassle of searching for tabs, and the disorder of opening redundant tabs for the target service.
+Polybolos lets you create Mac OSX launcher applications that can start local services (such as web UIs like **LibreChat** and **Open WebUI**), wait for the local or a remote service to become ready, then open the web UI in Google Chrome, focusing on an existing tab if available, or opening a new tab if not. This approach avoids the hassle of searching for tabs, and reduces the disorder from opening redundant tabs for the target service.
 
 <p align="center">
   <a href="https://en.wikipedia.org/wiki/Polybolos" target="_blank" rel="noopener noreferrer">
